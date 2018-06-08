@@ -1,9 +1,14 @@
 package test.main;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import test.mypac.AttackUnit;
+import test.mypac.Person;
 
 public class MainClass03 {
 	public static void main(String[] args) {
+		/*
 		AttackUnit unit = new AttackUnit();
 		unit.attack();
 		unit.attack();
@@ -15,5 +20,13 @@ public class MainClass03 {
 		unit2.attack();
 		unit2.attack();
 		unit2.attack();
+		*/
+		List<Person> man = new ArrayList<Person>();
+		Person info = new Person();
+		info.setID(1);
+		info.setName("SHong");
+		info.setPhone("010-1111-1111");
+		man.add(info);
+		
 	}
 }

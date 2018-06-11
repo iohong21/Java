@@ -28,5 +28,14 @@ public class MainClass03 {
 		info.setPhone("010-1111-1111");
 		man.add(info);
 		
+		info = new Person();
+		info.setID(2);
+		info.setName("Kim");
+		info.setPhone("010-2222-2222");
+		man.add(info);
+		
+		for(Person p : man) {
+			System.out.println(p.getName());
+		}
 	}
 }

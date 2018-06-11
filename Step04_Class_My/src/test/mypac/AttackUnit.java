@@ -9,4 +9,11 @@ public class AttackUnit {
 		System.out.println("공격해요!");
 	}
 	
+	public void defence() {
+		System.out.println("방어해요!");
+	}
+	
+	public void move() {
+		System.out.println("움직여요!");
+	}
 }

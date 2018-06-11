@@ -6,7 +6,7 @@ import java.util.List;
 import test.mypac.AttackUnit;
 import test.mypac.Person;
 
-public class MainClass03 {
+public class zMainClass03 {
 	public static void main(String[] args) {
 		/*
 		AttackUnit unit = new AttackUnit();

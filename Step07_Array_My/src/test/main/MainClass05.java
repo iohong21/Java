@@ -9,7 +9,6 @@ public class MainClass05 {
 		double[] d = { 10.1, 10.2, 10.3 };
 		
 		// 방법2
-		
 		double[] d2 = new double[3];
 		d2[0] = 10.1;
 		d2[1] = 10.2;

@@ -2,6 +2,7 @@ package test.main;
 
 import test.mypac.*;
 
+@SuppressWarnings("unused")
 public class MainClass02 {
 	public static void main(String[] args) {
 		// MemberDto 객체 생성해서

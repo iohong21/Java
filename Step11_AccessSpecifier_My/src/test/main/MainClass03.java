@@ -2,6 +2,7 @@ package test.main;
 
 import test.mypac.MemberDto;
 
+@SuppressWarnings("unused")
 public class MainClass03 {
 	public static void main(String[] args) {
 		// 1번 회원의 정보를  MemberDto 객체를 생성후

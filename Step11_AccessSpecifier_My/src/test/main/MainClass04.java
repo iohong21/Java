@@ -11,5 +11,4 @@ public class MainClass04 {
 		dao.insert();
 		dao.delete();
 	}
-
 }

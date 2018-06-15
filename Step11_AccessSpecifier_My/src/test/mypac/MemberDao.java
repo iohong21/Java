@@ -5,6 +5,7 @@ package test.mypac;
  * DataBase 에 insert, update, delete, select
  * 등의 작업을 하는 객체를 생성할 때 사용하는 클래스이다. 
  */
+@SuppressWarnings("unused")
 public class MemberDao {
 	// 자신의 참조값을 저장할 필드를 private static 으로 정의
 	private static MemberDao dao;

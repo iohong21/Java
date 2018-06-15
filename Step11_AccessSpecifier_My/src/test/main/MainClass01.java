@@ -3,6 +3,7 @@ package test.main;
 // import 가능 (public class Radio)
 import test.mypac.*;
 
+@SuppressWarnings("unused")
 public class MainClass01 {
 	public static void main(String[] args) {
 		// 생성자 호출 가능 ( public Radio(){} )

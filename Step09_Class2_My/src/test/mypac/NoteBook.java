@@ -2,7 +2,9 @@ package test.mypac;
 
 public class NoteBook {
 	// 필드
+	@SuppressWarnings("unused")
 	private Cpu cpu;
+	@SuppressWarnings("unused")
 	private Memory memory;
 	
 	// 생성자

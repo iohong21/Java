@@ -3,7 +3,6 @@ package test.main;
 import java.util.ArrayList;
 import java.util.List;
 
-import test.mypac.AttackUnit;
 import test.mypac.zPerson;
 
 public class zMainClass03 {

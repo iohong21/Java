@@ -3,6 +3,7 @@ package test.main;
 import test.mypac.*;
 
 public class MainClass04 {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		// SmartPhone 객체를 생성해서 참조값을 SmartPhone type
 		// 변수에 담기

@@ -13,6 +13,7 @@ package test.main;
  *  byte < short < int < long
  */		
 public class MainClass02 {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		// 정수형 변수 선언과 동시에 값 대입하기
 		byte iByte = 10;

@@ -3,6 +3,7 @@ package test.main;
 import test.mypac.*;
 
 public class MainClass05 {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		// SmartPhone type 객체를 생성해서 Object type 변수에 담기
 		Object p1 = new SmartPhone();

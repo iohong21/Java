@@ -9,6 +9,7 @@ import test.mypac.MyUtil;
  * 3. data type 역활 
  */
 public class MainClass01 {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		System.out.println("main 메소드가 시작 되었습니다.");
 		// MyUtil 클래스의 version 이라는 필드에 있는 값을

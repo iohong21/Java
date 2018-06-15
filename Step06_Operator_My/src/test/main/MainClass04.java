@@ -12,6 +12,7 @@ package test.main;
  * ! : not 연산, boolean 값을 반전시킨다. true => false, false => true
  */
 public class MainClass04 {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		//or 연산
 		boolean result1 = false || false; 	// false

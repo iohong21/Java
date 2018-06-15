@@ -8,6 +8,7 @@ package test.main;
  * - 종류 : +, -, *, /, %
  */
 public class MainClass01 {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		int num1 = 5;
 		int num2 = 2;

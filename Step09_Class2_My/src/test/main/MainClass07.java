@@ -3,6 +3,7 @@ package test.main;
 import test.mypac.Member;
 
 public class MainClass07 {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		System.out.println("main 메소드가 시작되었습니다.");
 		

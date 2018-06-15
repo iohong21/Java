@@ -3,6 +3,7 @@ package test.main;
 import test.mypac.*;
 
 public class MainClass05 {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		// NoteBook 객체 생성
 		NoteBook n1 = new NoteBook(new Cpu(), new Memory());

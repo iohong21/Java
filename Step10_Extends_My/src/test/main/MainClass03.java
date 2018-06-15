@@ -9,6 +9,7 @@ import test.mypac.*;
  * - 다형성이란 여러가지 type 이 될 수 있다는 의미이다
  */
 public class MainClass03 {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		// SmartPhone 객체의 참조값을 부모 type 변수에 대입하기
 		// p1 에 . 찍으면 Object 에 정의된 기능만 사용 가능

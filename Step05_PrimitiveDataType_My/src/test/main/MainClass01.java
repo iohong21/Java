@@ -10,6 +10,7 @@ package test.main;
  *             혹은 논리연산의 결과로 얻어낼 수 있다.
  */
 public class MainClass01 {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		// 논리형 변수 선언과 동시에 값 대입하기
 		boolean isRun = true;

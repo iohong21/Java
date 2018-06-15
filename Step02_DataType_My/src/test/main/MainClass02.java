@@ -8,6 +8,7 @@ package test.main;
  * - 실수형 : float, double
  */
 public class MainClass02 {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		// 정수형 변수 선언과 동시에 값 대입하기
 		System.out.println("main 메소드가 시작 되었습니다.");

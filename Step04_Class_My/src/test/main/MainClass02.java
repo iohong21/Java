@@ -3,6 +3,7 @@ package test.main;
 import test.mypac.YourUtil;;
 
 public class MainClass02 {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		/*
 		 * YourUtil 클래스의 company 필드에 있는 값을

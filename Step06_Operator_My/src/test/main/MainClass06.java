@@ -9,6 +9,7 @@ package test.main;
  * boolean type data ? 값1 : 값2
  */
 public class MainClass06 {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		boolean isWait = true;
 		

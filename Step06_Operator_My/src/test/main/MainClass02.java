@@ -7,6 +7,7 @@ package test.main;
  *  종류: ++, --
  */
 public class MainClass02 {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		int num=0;
 		num++; //1 증가 시키기 

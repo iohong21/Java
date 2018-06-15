@@ -3,6 +3,7 @@ package test.main;
 import test.mypac.AttackUnit;
 
 public class MainClass06 {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		//1. AttackUnit type의 참조값을 담을 변수 만들기 (null)
 		AttackUnit unit1 = null;

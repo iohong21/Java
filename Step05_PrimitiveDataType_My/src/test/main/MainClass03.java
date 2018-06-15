@@ -10,6 +10,7 @@ package test.main;
 *  float < double 
 */
 public class MainClass03 {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		// 실수형 변수 선언과 동시에 값 대입하기
 		float iFloat = 10.1f;

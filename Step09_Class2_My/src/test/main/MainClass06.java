@@ -3,6 +3,7 @@ package test.main;
 import java.util.Scanner;
 
 public class MainClass06 {
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		/*
 		 * System.in 은 키보드로 부터 입력 받을 수 있는

@@ -1,6 +1,7 @@
 package test.main;
 
 public class MainClass02 {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		int num1 = 10;
 		Integer num2 = 20;

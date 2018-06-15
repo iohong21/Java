@@ -9,6 +9,7 @@ package test.main;
  * - 내부적으로 정수값으로 처리된다.
  */
 public class MainClass04 {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		// char 형 변수 선언과 동시에 값 대입하기
 		char ch1='a';

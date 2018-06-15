@@ -8,6 +8,7 @@ package test.main;
  * - 비교 연산의 결과는 boolean type으로 나타난다.
  */
 public class MainClass03 {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		// 양쪽에 있는 값이 같은지 비교
 		boolean result1 = 10 == 10;  	// true

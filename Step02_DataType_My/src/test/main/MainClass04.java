@@ -8,6 +8,7 @@ package test.main;
  * - true, false 논리값을 다루기 위한 Data type
  */
 public class MainClass04 {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		System.out.println("man 메소드가 시작 되었습니다.");
 		boolean isWait = true;

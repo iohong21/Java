@@ -2,10 +2,9 @@ package test.main;
 
 import java.util.*;
 
-import test.mypac.MemberDto;
+//import test.mypac.MemberDto;
 
 public class MainClass11 {
-	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		// Map<String, Object> 를 저장할 ArrayList 객체를 생성 해서
 		// 참조값을 members 라는 변수에 담아보세요.

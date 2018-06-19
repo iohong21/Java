@@ -23,5 +23,6 @@ public class MainClass12 {
 		set1.add(20);
 		set1.add(40);
 		set1.add(50);
+		
 	}
 }

@@ -14,7 +14,7 @@ import java.util.*;
 public class MainClass12 {
 	public static void main(String[] args) {
 		// 정수를 저장할 수 있는 HashSet 객체
-		HashSet<Integer> set1 = new HashSet<>();
+		Set<Integer> set1 = new HashSet<>();
 		
 		set1.add(10);
 		set1.add(20);
@@ -24,5 +24,22 @@ public class MainClass12 {
 		set1.add(40);
 		set1.add(50);
 		
+		/*
+		 * HashSet 객체에 있는 모든 숫자를 콘솔에 출력해 보세요.
+		 * 
+		 */
+		Iterator<Integer> setData = set1.iterator(); 
+		while(setData.hasNext()) {
+			System.out.println("결과: " + setData.next());
+		}
+		
+		System.out.println("-- for 문 --");
+		
+		for(Integer n : set1) {
+			System.out.println("결과2: " + n);
+		}
+		
+		System.out.println("-- forEach 문 --");
+		set1.forEach((Integer n)->System.out.println(n));
 	}
 }

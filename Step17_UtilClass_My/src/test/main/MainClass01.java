@@ -7,14 +7,13 @@ import java.util.ArrayList;
  * 
  * - 가변 배열이다.
  * - 기본 data type 은 저장할 수 없고 참조값(id)만 저장할 수 있다.
- * - Generic 클ㄹ래스를 지정하지 않으면 Object 가 Generic 클래스로
- *   지정된다.
- * - 데이터 저장         : .add(참조값)
- * - 데이터 참조         : .get(인덱스)
- * - 사이즈 참조         : .size()
- * - 데이터 삭제         : .remove(인덱스)
- * - 데이터 모두 삭제  : .clear()
- * - Serializable, List 인터페이스 등을 구현했다
+ * - Generic 클래스를 지정하지 않으면,  Object 가 Generic 클래스로 지정된다.
+ * - 데이터 저장          : .add(참조값)
+ * - 데이터 참조          : .get(인덱스)
+ * - 사이즈 참조          : .size()
+ * - 데이터 삭제          : .remove(인덱스)
+ * - 데이터 모두 삭제   : .clear()
+ * - Serializable , List 인터페이스 등을 구현했다
  */
 public class MainClass01 {
 	@SuppressWarnings({ "unused", "rawtypes" })

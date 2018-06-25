@@ -9,6 +9,7 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JRadioButton;
 
+@SuppressWarnings("serial")
 public class JRadioButtonTest extends JFrame implements ActionListener {
 	// 필드
 	private JRadioButton ra_man, ra_woman; 

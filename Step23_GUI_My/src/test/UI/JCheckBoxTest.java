@@ -5,8 +5,8 @@ import java.awt.event.ItemListener;
 
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
-import javax.swing.JRadioButton;
 
+@SuppressWarnings("serial")
 public class JCheckBoxTest extends JFrame implements ItemListener {
 	JCheckBox ck1, ck2;
 	public JCheckBoxTest() {

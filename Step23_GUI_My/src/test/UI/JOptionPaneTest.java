@@ -8,6 +8,7 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
+@SuppressWarnings("serial")
 public class JOptionPaneTest extends JFrame implements ActionListener {
 	public JOptionPaneTest() {
 		JButton alertBtn = new JButton("알림버튼");

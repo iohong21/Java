@@ -6,6 +6,7 @@ import javax.swing.DefaultListModel;
 import javax.swing.JFrame;
 import javax.swing.JList;
 
+@SuppressWarnings("serial")
 public class JListTest extends JFrame {
 	
 	// 생성자

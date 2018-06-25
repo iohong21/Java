@@ -7,9 +7,9 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 
+@SuppressWarnings("serial")
 public class JTextAreaTest extends JFrame implements ActionListener {
 	JTextArea ta = null;
 	// 생성자

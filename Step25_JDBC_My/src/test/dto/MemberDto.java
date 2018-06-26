@@ -1,5 +1,8 @@
 package test.dto;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MemberDto {
 	private int num;
 	private String name;
@@ -28,5 +31,8 @@ public class MemberDto {
 	}
 	public void setAddr(String addr) {
 		this.addr = addr;
+	}
+	public Object[] toArray() {
+		return new Object[]{ num, name, addr};
 	}
 }

@@ -15,7 +15,7 @@ import test.dto.MemberDto;
  */
 public class MainClass08 {
 	public static void main(String[] args) {
-		// DB 에 저장할 외원 정보라고 가정!
+		// DB 에 저장할 회원 정보라고 가정!
 		int num = 4;
 		String name = "주뎅이";
 		String addr = "갈현동";
@@ -23,7 +23,7 @@ public class MainClass08 {
 		// MemberDao 객체의 참조값 얻어와서
 		MemberDao dao = MemberDao.getInstance();
 		
-		int no = 5;
+		int no = 1;
 		
 		switch(no) {
 		case 1:
@@ -39,31 +39,33 @@ public class MainClass08 {
 			break;
 			
 		case 3:
-			if(dao.delete(4)) {
+			if(dao.delete(num)) {
 				System.out.println("자료를 삭제 하였습니다.");
 			}
 			break;
 			
 		case 4:
 			MemberDto dto = dao.getData(2);
-			System.out.println(dto.getNum() + " | " + dto.getName() + " | " + dto.getAddr());
+			if(dto != null) {
+				System.out.println(dto.getNum() + " | " + dto.getName() + " | " + dto.getAddr());
+			}
 			break;
 			
 		case 5:
 			// 회원정보 가져오기
 			List<MemberDto> lists = dao.getList();
 			if(lists.size() > 0) {
-				System.out.println("  [ 조회결과 ]");
-				System.out.println("==============");
-				System.out.println("순번     성명     주소");
-				System.out.println("==============");
+				System.out.println("      [ 조회결과 ]");
+				System.out.println("======================");
+				System.out.println("  순번          성명        주소");
+				System.out.println("======================");
 				for(MemberDto list : lists) {
 //					System.out.println(dto5.getNum() + " | " + dto5.getName() + " | " + dto5.getAddr());
-					System.out.println(String.format("%3d  %-6s%-8s", list.getNum(), list.getName(), list.getAddr()));
+					int nSize = 15 - (list.getName().length()*2);
+					System.out.println(String.format("%4d     %-" + nSize + "s%-8s", list.getNum(), list.getName(), list.getAddr()));
 				}
 			}
 			break;
 		}
-		
 	}
 }

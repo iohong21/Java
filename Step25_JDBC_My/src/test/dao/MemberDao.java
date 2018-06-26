@@ -26,13 +26,13 @@ public class MemberDao {
 	
 	// 3. 자신의 참조값을 리턴해주는 static 멤버 메소드를 정의한다.
 	public static MemberDao getInstance() {
-		if(dao == null) {	// 최초 호출될때는 null 이다.
+		if(dao == null) {			// 최초 호출될때는 null 이다.
 			dao = new MemberDao();	// 객체를 생성해서 필드에 저장한다.
 		}
 		// 필드에 저장된 참조값을 리턴해준다.
 		return dao;
 	}
-	
+		
 	// 회원정보를 저장하는 메소드
 	public boolean insert(MemberDto dto) {
 		Connection conn = null;
@@ -118,7 +118,6 @@ public class MemberDao {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		MemberDto dto = null;
-		// 영향을 받은 row 의 갯수를 저장할 지역 변수
 		
 		try {
 			// Connection 객체의 참조값 얻어오기
@@ -130,13 +129,13 @@ public class MemberDao {
 			if(rs.next()) {
 				dto = new MemberDto(num, rs.getString("name"), rs.getString("addr"));
 			}
-			
 		} catch (Exception ex) {
 			ex.printStackTrace();
+			dto = null;
 		} finally {
 			try {
-				if(pstmt != null) pstmt.close();
 				if(rs != null) rs.close();
+				if(pstmt != null) pstmt.close();
 				if(conn != null) conn.close();
 			} catch(Exception ex) {}
 		}
@@ -146,17 +145,14 @@ public class MemberDao {
 	// 회원 목록을 리턴하는 메소드
 	public List<MemberDto> getList() {
 		Connection conn = null;
-		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		List<MemberDto> listDto = new ArrayList<>();
-		// 영향을 받은 row 의 갯수를 저장할 지역 변수
 		
 		try {
 			// Connection 객체의 참조값 얻어오기
 			conn = new DBConnect().getConn();
-			String  sql = "select num, name, addr from member";
-			pstmt = conn.prepareStatement(sql);
-			rs = pstmt.executeQuery(sql);
+			String  sql = "select num, name, addr from member order by num";
+			rs = conn.prepareStatement(sql).executeQuery();
 			while(rs.next()) {
 				listDto.add(new MemberDto(rs.getInt("num"), rs.getString("name"), rs.getString("addr")));
 			}
@@ -164,7 +160,6 @@ public class MemberDao {
 			ex.printStackTrace();
 		} finally {
 			try {
-				if(pstmt != null) pstmt.close();
 				if(rs != null) rs.close();
 				if(conn != null) conn.close();
 			} catch(Exception ex) {}

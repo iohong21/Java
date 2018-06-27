@@ -139,6 +139,7 @@ public class JTableTest extends JFrame implements ActionListener, MouseListener 
 			MemberDto dto = new MemberDto(num, name, addr);
 			MemberDao.getInstance().update(dto);
 		}
+		JOptionPane.showMessageDialog(this, "수정되었습니다");
 	}
 	
 	void doDelete() {
@@ -149,6 +150,7 @@ public class JTableTest extends JFrame implements ActionListener, MouseListener 
 		} else {
 			int empno = Integer.parseInt(model.getValueAt(selectedRow, 0).toString());
 			MemberDao.getInstance().delete(empno);
+			JOptionPane.showMessageDialog(this, "삭제되었습니다");
 			doQuery();
 		}
 	}
@@ -178,28 +180,12 @@ public class JTableTest extends JFrame implements ActionListener, MouseListener 
 	public void actionPerformed(ActionEvent e) {
 		String cmd = e.getActionCommand();
 		switch(cmd) {
-		case INSERT:
-			doInsert();
-			break;
-			
-		case UPDATE:
-			doUpdate();
-			break;
-		
-		case DELETE:
-			doDelete();
-			break;
-			
-		case QUERY:
-			doQuery();
-			break;
-			
-		case CANCEL:
-			doCancel();
-			break;
-		case CONFIRM:
-			doConfirm();
-			break;
+		case INSERT: doInsert(); break;
+		case UPDATE: doUpdate(); break;
+		case DELETE: doDelete(); break;
+		case QUERY: doQuery(); break;
+		case CANCEL: doCancel(); break;
+		case CONFIRM: doConfirm(); break;
 		}
 	}
 

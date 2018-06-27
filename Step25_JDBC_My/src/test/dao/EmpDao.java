@@ -31,7 +31,8 @@ public class EmpDao {
 		try {
 			// Connection 객체의 참조값 얻어오기
 			conn = new DBConnect().getConn();
-			String sql = "Select empno, ename, sal, dname, to_char(hiredate, 'YYYY\"년\" MM\"월\" DD\"일\"') as hiredate"
+			String sql = "Select empno, ename, sal, dname"
+					   + "     , to_char(hiredate, 'YYYY\"년\" MM\"월\" DD\"일\"') as hiredate"
 					   + "  from emp inner join dept on emp.deptno = dept.deptno"
 					   + " where empno = ?"
 					   + " order by empno";
@@ -68,17 +69,20 @@ public class EmpDao {
 		try {
 			// Connection 객체의 참조값 얻어오기
 			conn = new DBConnect().getConn();
-			String sql = "Select empno, ename, sal, dname, to_char(hiredate, 'YYYY\"년\" MM\"월\" DD\"일\"') as hiredate"
+			String sql = "Select empno, ename, sal, dname"
+					   + "     , to_char(hiredate, 'YYYY\"년\" MM\"월\" DD\"일\"') as hiredate"
 					   + "  from emp inner join dept on emp.deptno = dept.deptno"
 					   + " order by empno";
 			rs = conn.prepareStatement(sql).executeQuery();
 			while(rs.next()) {
 				EmpDto emp = new EmpDto();
+				
 				emp.setEmpno(rs.getInt("empno"));
 				emp.setEname(rs.getString("ename"));
 				emp.setSal(rs.getDouble("sal"));
 				emp.setDname(rs.getString("dname"));
 				emp.setHiredate(rs.getString("hiredate"));
+				
 				listDto.add(emp);
 			}
 		} catch (Exception ex) {

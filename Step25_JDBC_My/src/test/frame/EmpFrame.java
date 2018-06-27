@@ -31,7 +31,13 @@ public class EmpFrame extends JFrame implements ActionListener {
 		// 테이블의 칼럼명
 		String[] colNames = {"사원번호", "이름", "급여", "부서명", "입사일"};
 		// 테이블에 연결할 모델 객체
-		model = new DefaultTableModel(colNames, 0);
+		model = new DefaultTableModel(colNames, 0) {
+			@Override
+			public boolean isCellEditable(int row, int column) {
+				//return super.isCellEditable(row, column);
+				return false;
+			}
+		};
 		
 		// 테이블 객체를 생성하고
 		JTable table = new JTable();
@@ -47,7 +53,7 @@ public class EmpFrame extends JFrame implements ActionListener {
 		// 가운데 패널을 만들고
 		JPanel northPanel = new JPanel();
 		// 버튼을 만들어서
-		JButton testBtn = new JButton("테스트");
+		JButton testBtn = new JButton("목록 보기");
 		// 패널에 붙이고
 		testBtn.addActionListener(this);
 		northPanel.add(testBtn);
